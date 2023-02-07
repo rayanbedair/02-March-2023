@@ -1,7 +1,95 @@
-body
-{
+@charset "UTF-8";
+:root {
+    --bg-color: #FAFAFA;
+    --text-color: black;
+    --borders-color: #222;
+    --borders-color-inverted: #ccc;
+    --header-color: whitesmoke;
+}
+
+[data-theme="dark"] {
+    --bg-color: rgb(38, 38, 38);
+    --text-color: white;
+    --borders-color: #ccc;
+    --borders-color-inverted: #222;
+    --header-color: black;
+}
+
+body {
     font-family: 'Helvetica', 'Arial', sans-serif;
-    color: #444444;
+    color: var(--text-color);
     font-size: 9pt;
-    background-color: #FAFAFA;
+    background-color: var(--bg-color);
+    margin: 0;
+}
+
+/* Thanks to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch for the button switcher */
+
+.darkmode {
+    position: absolute;
+    display: inline-block;
+    inline-size: 60px;
+    block-size: 34px;
+    inset-block-start: 30px;
+    inset-inline-end: 35px;
+}
+
+.darkmode input {
+    display: none;
+}
+
+.buttonSlider {
+    position: absolute;
+    cursor: pointer;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    border-radius: 34px;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.buttonSlider:before {
+    position: absolute;
+    content: "🌞";
+    text-align: center;
+    font-size: 20px;
+    block-size: 26px;
+    inline-size: 26px;
+    inset-inline-start: 4px;
+    inset-block-end: 4px;
+    border-radius: 50%;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.buttonSlider {
+    background-color: white;
+}
+
+input:checked+.buttonSlider:before {
+    content: "🌙";
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+a {
+    text-decoration:line-through;
+    text-decoration-line: underline;
+    text-decoration-color: #ccc;
+    color: white;
+}
+
+#hidden_link {
+    color: black;
+    text-decoration-color: black;
+}
+
+#hidden_link:hover {
+    color: white;
+    text-decoration-color: white;
 }
