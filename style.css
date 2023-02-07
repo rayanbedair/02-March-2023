@@ -1,18 +1,23 @@
 @charset "UTF-8";
+
 :root {
     --bg-color: #FAFAFA;
     --text-color: black;
-    --borders-color: #222;
-    --borders-color-inverted: #ccc;
-    --header-color: whitesmoke;
+    --text-color-inverted: white;
+    --blue: rgb(15, 128, 173);
+    --orange: rgb(173, 139, 15);
+    --green: rgb(70, 195, 78);
+    --purple: rgb(163, 88, 227);
 }
 
 [data-theme="dark"] {
     --bg-color: rgb(38, 38, 38);
     --text-color: white;
-    --borders-color: #ccc;
-    --borders-color-inverted: #222;
-    --header-color: black;
+    --text-color-inverted: black;
+    --blue: rgb(7, 14, 192);
+    --orange: rgb(201, 126, 5);
+    --green: rgb(21, 122, 3);
+    --purple: rgb(67, 6, 121);
 }
 
 body {
@@ -21,6 +26,22 @@ body {
     font-size: 9pt;
     background-color: var(--bg-color);
     margin: 0;
+}
+
+.blue {
+    background-color: var(--blue);
+}
+
+.orange {
+    background-color: var(--orange);
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.purple {
+    background-color: var(--purple);
 }
 
 /* Thanks to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch for the button switcher */
@@ -78,7 +99,7 @@ input:checked+.buttonSlider:before {
 }
 
 a {
-    text-decoration:line-through;
+    text-decoration: line-through;
     text-decoration-line: underline;
     text-decoration-color: #ccc;
     color: white;
@@ -92,4 +113,59 @@ a {
 #hidden_link:hover {
     color: white;
     text-decoration-color: white;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 5vh;
+    margin-right: 5vh;
+}
+
+
+section.wave {
+    position: relative;
+    padding-top: 5vh;
+    padding-bottom: 30vh;
+    color: var(--text-color-inverted);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+section.blue {
+    border-radius: 0 0 15% 40%;
+}
+
+section.green {
+    border-radius: 0 0 5% 20%;
+}
+
+section.orange {
+    border-radius: 0 0 30% 5%;
+}
+
+section.purple {
+    border-radius: 0 0 75% 10%;
+}
+
+.mega_surprise {
+    font-size: 40ch;
+    font-weight: bold;
+    text-align: center;
+    animation: Color .5s linear infinite;
+    transition: Color .5s ;
+}
+
+.mega_surprise:hover {
+    color: var(--text-color-inverted);
+}
+
+@keyframes Color {
+    0% {
+        color: var(--text-color-inverted);
+    }
+
+    50% {
+        color: red;
+    }
 }
