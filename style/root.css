@@ -118,4 +118,13 @@ p {
     margin-bottom: 0;
     margin-left: 5vh;
     margin-right: 5vh;
+    font-size: 7ch;
+    letter-spacing: normal;
+    text-align: justify;
+}
+
+p.big_p {
+    font-size: 50ch;
+    text-align: center;
+    font-weight: bold;
 }
