@@ -31,17 +31,14 @@ body {
 .blue {
     background-color: var(--blue);
 }
-
 .orange {
     background-color: var(--orange);
 }
-
-.green {
-    background-color: var(--green);
-}
-
 .purple {
     background-color: var(--purple);
+}
+.black {
+    background-color: black;
 }
 
 /* Thanks to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_switch for the button switcher */
@@ -105,14 +102,18 @@ a {
     color: white;
 }
 
+a:hover {
+    color: bisque;
+}
+
 #hidden_link {
     color: black;
     text-decoration-color: black;
 }
 
 #hidden_link:hover {
-    color: white;
-    text-decoration-color: white;
+    color: bisque;
+    text-decoration-color: #ccc;
 }
 
 p {
@@ -136,12 +137,9 @@ section.blue {
     border-radius: 0 0 15% 40%;
 }
 
-section.green {
-    border-radius: 0 0 5% 20%;
-}
-
 section.orange {
-    border-radius: 0 0 30% 5%;
+    border-radius: 0 0 10% 35%;
+    padding-bottom: 20vh;
 }
 
 section.purple {
@@ -152,13 +150,10 @@ section.purple {
     font-size: 40ch;
     font-weight: bold;
     text-align: center;
-    animation: Color .5s linear infinite;
+    animation: Color .5s ease-in infinite;
     transition: Color .5s ;
 }
 
-.mega_surprise:hover {
-    color: var(--text-color-inverted);
-}
 
 @keyframes Color {
     0% {
