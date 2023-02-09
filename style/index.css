@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+.blue {
+    background-color: var(--blue);
+}
+.orange {
+    background-color: var(--orange);
+}
+.purple {
+    background-color: var(--purple);
+}
+.black {
+    background-color: var(--header-color);
+}
+
+
+section.wave {
+    position: relative;
+    padding-top: 5vh;
+    padding-bottom: 30vh;
+    color: var(--text-color-inverted);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+section.blue {
+    border-radius: 0 0 15% 40%;
+}
+
+section.orange {
+    border-radius: 0 0 10% 35%;
+    padding-bottom: 20vh;
+}
+
+section.purple {
+    border-radius: 0 0 75% 10%;
+}
+
+.mega_surprise {
+    font-size: 40ch;
+    font-weight: bold;
+    text-align: center;
+    animation: Color .5s ease-in infinite;
+    transition: Color .5s ;
+}
+
+
+@keyframes Color {
+    0% {
+        color: var(--text-color-inverted);
+    }
+
+    50% {
+        color: red;
+    }
+}
