@@ -1,15 +1,28 @@
 @charset "UTF-8";
 
 input[type=text] {
+    border: var(--background-color);
     margin: 0 0 1ch 1ch;
     inline-size: attr(maxlength, ch);
     block-size: auto;
-    /* font-weight: 10ch; */
     font-size: 10ch;
     letter-spacing: 2ch;
+    position: absolute;
 }
 
 input[type=text].vertical {
     writing-mode: vertical-lr;
     text-orientation: upright;
+}
+
+table {
+    margin: 0 0 1ch 1ch;
+    font-size: 10ch;
+    border: .1ch;
+    position: absolute;
+    z-index: -1;
+}
+td {
+    border: .1ch solid black;
+    padding-right: 2ch;
 }
