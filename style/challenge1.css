@@ -2,13 +2,14 @@
 
 input[type=text] {
     background-color: var(--background-color);
+    color: transparent;
     border: var(--background-color);
     margin: 0 0 1ch 1ch;
-    inline-size: attr(maxlength, ch);
     block-size: auto;
     font-size: 10ch;
     letter-spacing: 2ch;
     position: absolute;
+
 }
 
 input[type=text].vertical {
@@ -24,7 +25,9 @@ table {
     z-index: -1;
 }
 
-td {
+td, tr {
     border: .1ch solid black;
-    padding-right: 2ch;
+    padding-right: 1ch;
+    padding-left: 1ch;
+    text-align: center;
 }
