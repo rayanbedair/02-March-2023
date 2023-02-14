@@ -4,8 +4,8 @@ var tables = document.querySelectorAll('table'), table;
 var isVerticalTable, cells, cell, rows, row;
 
 for (var i = 0; i < inputs.length; i++) {
-    inputs[i].style['inline-size'] = (3 * inputs[i].maxLength).toString() + 'ch';
     isVerticalTable = inputs[i].getAttribute('class') === 'vertical';
+    inputs[i].style['inline-size'] = isVerticalTable ? (2 * inputs[i].maxLength - 2.75).toString() + 'ch' : (3 * inputs[i].maxLength + 4).toString() + 'ch';
 
     // Emptying the text when loading the page
     inputs[i].value = '';

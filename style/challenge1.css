@@ -4,13 +4,14 @@ input[type=text] {
     background-color: transparent;
     color: transparent;
     border: transparent;
-    block-size: auto;
+    block-size: 2.6ch;
     font-size: 10ch;
     letter-spacing: 2ch;
     position: absolute;
 }
 
 input[type=text].vertical {
+    block-size: 1.95ch;
     writing-mode: vertical-lr;
     text-orientation: upright;
 }
