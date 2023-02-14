@@ -22,7 +22,9 @@
     --purple: rgb(67, 6, 121);
 }
 
-body {
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: 'Helvetica', 'Arial', sans-serif;
     color: var(--text-color);
     font-size: 9pt;
