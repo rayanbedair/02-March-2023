@@ -40,7 +40,7 @@ function UpdateTable(event) {
     cells = event.currentTarget.table.rows[0].cells;
 
     for (i = 0; i < cells.length && i < event.target.value.length; i++) {
-        cells[i].innerText = event.target.value[i];
+        cells[i].innerText = event.target.value[i].toUpperCase();
     }
     for (i = event.target.value.length; i < cells.length; i++) {
         cells[i].innerText = '_';
@@ -52,7 +52,7 @@ function UpdateVerticalTable(event) {
     rows = event.currentTarget.table.rows;
 
     for (i = 0; i < rows.length && i < event.target.value.length; i++) {
-        rows[i].cells[0].innerText = event.target.value[i];
+        rows[i].cells[0].innerText = event.target.value[i].toUpperCase();
     }
     for (i = event.target.value.length; i < rows.length; i++) {
         rows[i].cells[0].innerText = '_';
