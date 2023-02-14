@@ -23,7 +23,7 @@
 }
 
 body {
-    font-family: "Oswald", monospace;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     color: var(--text-color);
     font-size: 9pt;
     background-color: var(--bg-color);
