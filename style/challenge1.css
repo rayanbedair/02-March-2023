@@ -1,15 +1,13 @@
 @charset "UTF-8";
 
 input[type=text] {
-    background-color: var(--background-color);
+    background-color: transparent;
     color: transparent;
-    border: var(--background-color);
-    margin: 0 0 1ch 1ch;
+    border: transparent;
     block-size: auto;
     font-size: 10ch;
     letter-spacing: 2ch;
     position: absolute;
-
 }
 
 input[type=text].vertical {
@@ -18,16 +16,21 @@ input[type=text].vertical {
 }
 
 table {
-    margin: 0 0 1ch 1ch;
+    font-family: "Oswald", monospace;
     font-size: 10ch;
-    border: .1ch;
     position: absolute;
     z-index: -1;
+    background-color: var(--text-color);
 }
 
-td, tr {
+tr,
+td {
     border: .1ch solid black;
-    padding-right: 1ch;
-    padding-left: 1ch;
+    padding: .1ch 1ch .1ch 1ch;
     text-align: center;
+    color: var(--text-color);
+}
+
+td {
+    background-color: var(--bg-color);
 }
