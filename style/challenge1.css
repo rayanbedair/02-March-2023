@@ -35,3 +35,14 @@ td {
 td {
     background-color: var(--bg-color);
 }
+
+h1 {
+    position: absolute;
+    left: -3ch;
+    top: 2ch;
+}
+
+h1.vertical {
+    left: 3ch;
+    top: -3ch;
+}
