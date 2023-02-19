@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+table {
+    width: calc(100% - 10ch);
+    margin: 15ch 5ch 15ch 5ch !important;
+    border: none;
+}
+
+
+td {
+    border: 5px solid black;
+    text-align: center;
+}
+
+img{
+    width: 40vh;
+    height: 50vh;
+    object-fit: scale-down;
+    filter: blur(20px);
+}
