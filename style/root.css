@@ -111,7 +111,7 @@ a {
 
 a:hover,
 #hidden_link:hover {
-    color: bisque;
+    color: bisque !important;
     text-decoration-color: #ccc;
 }
 
