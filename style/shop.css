@@ -3,16 +3,17 @@
 table {
     width: calc(100% - 10ch);
     margin: 15ch 5ch 15ch 5ch !important;
-    border: none;
+    border-spacing: 5ch;
 }
 
 
 td {
-    border: 5px solid black;
+    border: .5ch solid black;
+    border-radius: 5%;
     text-align: center;
 }
 
-img{
+img {
     width: 40vh;
     height: 50vh;
     object-fit: scale-down;
