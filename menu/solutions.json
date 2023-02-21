@@ -1,14 +1,5 @@
 {
-    "1": {
-        "name": "hanami",
-        "found": false
-    },
-    "2": {
-        "name": "case",
-        "found": false
-    },
-    "3": {
-        "name": "squishy",
-        "found": false
-    }
+    "1": "hanami",
+    "2": "case",
+    "3": "squishy"
 }

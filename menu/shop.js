@@ -7,11 +7,8 @@ fetch('solutions.json')
         solutions = eval(jsonResponse);
 
         for (image of images) {
-
-            if (!solutions[image.id].found) {
-                image.addEventListener('click', PromptHint, false);
-            }
-        };
+            image.addEventListener('click', PromptHint, false);
+        }
     });
 
 
