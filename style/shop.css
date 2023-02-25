@@ -17,5 +17,5 @@ img {
     width: 40vh;
     height: 50vh;
     object-fit: scale-down;
-    filter: blur(20px);
+    filter: blur(20px) hue-rotate(90deg);
 }
