@@ -19,32 +19,32 @@ input[type=text].vertical {
 table {
     font-family: "Oswald", monospace;
     font-size: 10ch;
-    position: absolute;
-    z-index: -1;
-    background-color: var(--text-color);
+    width: calc(100% - 10ch);
+    margin: 3ch 5ch 0 5ch;
 }
 
-tr,
 td {
     border: .1ch solid black;
     padding: .1ch 1ch .1ch 1ch;
     text-align: center;
     color: var(--text-color);
-}
-
-td {
     background-color: var(--bg-color);
 }
 
-h1 {
-    position: absolute;
-    left: -3ch;
-    top: 2ch;
+td.invisible {
+    border: none;
 }
 
-h1.vertical {
-    left: 3ch;
-    top: -3ch;
+td.number {
+    border: none;
+    text-align: right;
+    font-size: small;
+    font-weight: bolder;
+}
+
+td.vertical {
+    text-align: center;
+    padding: auto;
 }
 
 .red_letter {
