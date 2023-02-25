@@ -121,13 +121,13 @@ p {
     margin-bottom: 0;
     margin-left: 5vh;
     margin-right: 5vh;
-    font-size: 7ch;
+    font-size: 5ch;
     letter-spacing: normal;
     text-align: justify;
 }
 
 p.big_p {
-    font-size: 30ch;
+    font-size: 25ch;
     text-align: center;
     font-weight: bold;
 }
