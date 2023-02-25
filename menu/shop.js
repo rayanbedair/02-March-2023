@@ -16,8 +16,9 @@ function PromptHint(event) {
     promptHint = prompt('Indice : ');
     imgId = event.srcElement.id;
 
-    if (promptHint === solutions[imgId].name) {
-        event.srcElement.setAttribute('style', 'filter: blur(0px);');
+    if (promptHint === solutions[imgId]) {
+        event.srcElement.setAttribute('style', 'filter: none;');
+        event.srcElement.removeEventListener('click', PromptHint, false);
     }
 
 }
