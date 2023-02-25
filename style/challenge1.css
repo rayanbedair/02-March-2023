@@ -18,9 +18,9 @@ input[type=text].vertical {
 
 table {
     font-family: "Oswald", monospace;
-    font-size: 8ch;
+    font-size: 5ch;
     width: calc(100% - 10ch);
-    margin: 3ch 2ch 0 2ch;
+    margin: 3ch .5ch 0 2ch;
 }
 
 td {
