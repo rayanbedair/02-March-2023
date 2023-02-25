@@ -18,14 +18,14 @@ input[type=text].vertical {
 
 table {
     font-family: "Oswald", monospace;
-    font-size: 10ch;
+    font-size: 8ch;
     width: calc(100% - 10ch);
     margin: 3ch 2ch 0 2ch;
 }
 
 td {
     border: .1ch solid black;
-    padding: .1ch 1ch .1ch 1ch;
+    padding: .1ch .5ch .1ch .5ch;
     text-align: center;
     color: var(--text-color);
     background-color: var(--bg-color);
