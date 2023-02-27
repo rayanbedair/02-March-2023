@@ -174,6 +174,7 @@ function gameOver() {
   document.onpointerup = null;
 
   canvas.addEventListener('click', explode);
+  alert("Bravo ! Le mot de passe pour le 3ème cadeau est \"squishy\"");
 }
 
 function pieceDropped(e) {
