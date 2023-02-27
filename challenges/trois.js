@@ -301,8 +301,3 @@ function explode(e) {
 
 var angleTools = { getAngle: function (t, n) { var a = n.x - t.x, e = n.y - t.y; return Math.atan2(e, a) / Math.PI * 180 }, getDistance: function (t, n) { var a = t.x - n.x, e = t.y - n.y; return Math.sqrt(a * a + e * e) }, moveOnAngle: function (t, n) { var a = this.getOneFrameDistance(t, n); t.x += a.x, t.y += a.y }, getOneFrameDistance: function (t, n) { return { x: n * Math.cos(t.rotation * Math.PI / 180), y: n * Math.sin(t.rotation * Math.PI / 180) } } };
 function r(a, b, c) { return parseFloat((Math.random() * ((a ? a : 1) - (b ? b : 0)) + (b ? b : 0)).toFixed(c ? c : 0)); }
-
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
