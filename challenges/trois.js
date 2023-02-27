@@ -4,7 +4,7 @@ const PUZZLE_HOVER_TINT = "#009900";
 const img = new Image();
 const canvas = document.querySelector("#canvas");
 const stage = canvas.getContext("2d");
-let difficulty = 2;
+let difficulty = 6;
 let pieces;
 let puzzleWidth;
 let puzzleHeight;
@@ -14,7 +14,7 @@ let currentPiece;
 let currentDropPiece;
 let mouse;
 img.addEventListener("load", onImage, false);
-img.src = "https://asyncbanana.github.io/html5-canvas-puzzle/mke.jpg";
+img.src = "https://www.esilv.fr/ecole-ingenieur/wp-content/uploads/2020/04/frederic_fauberteau-ESILv.gif";
 
 function initPuzzle() {
   pieces = [];
