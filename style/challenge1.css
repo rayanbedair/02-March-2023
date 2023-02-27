@@ -31,6 +31,8 @@ td.vertical {
     text-align: center;
 }
 
-.red_letter {
+.red {
+    margin: 0;
+    font-size: small;
     color: red;
 }
