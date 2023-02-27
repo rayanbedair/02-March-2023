@@ -27,8 +27,8 @@ td.number {
 }
 
 td.vertical {
+    vertical-align: bottom;
     text-align: center;
-    padding: auto;
 }
 
 .red_letter {
