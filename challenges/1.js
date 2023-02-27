@@ -37,6 +37,7 @@ function FillTable(e) {
     var response = prompt(prompts[id - 1]).toUpperCase();
     var wordIndexes = coordinatesOfWords[id];
     var wordLength = 1 + (wordIndexes[1][0] - wordIndexes[0][0]) + (wordIndexes[1][1] - wordIndexes[0][1]);
+    var newLetter;
 
     if (response === null) return;
     if (response === "") return;
@@ -49,20 +50,9 @@ function FillTable(e) {
     for (var i = wordIndexes[0][0], k = 0; i <= wordIndexes[1][0]; i++)  {
         for (var j = wordIndexes[0][1]; j <= wordIndexes[1][1]; j++) {
 
-            tbody.rows[i].cells[j].innerText = response[k];
+            newLetter = tbody.rows[i].cells[j].innerHTML.replace(tbody.rows[i].cells[j].innerHTML[0], response[k]);
+            tbody.rows[i].cells[j].innerHTML = newLetter;
             k++;
         }
     }
-
-    console.log(k, response.length);
-    // If we've reached both of the boundaries, we've properly filled the table.
-    if (response.length >= wordLength) return;
-    
-    for (var i = wordIndexes[0][0], k = 0; i <= wordIndexes[1][0]; i++) {
-        for (var j = wordIndexes[0][1]; j <= wordIndexes[1][1]; j++) {
-
-            tbody.rows[i].cells[j].innerText = "_";
-        }
-    }
-
 }
